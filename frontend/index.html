@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Employee Management</title>
+
+    <link
+        rel="stylesheet"
+        href="styles.css"
+    >
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+
+            <p class="tag">
+                AWS 3-TIER APPLICATION
+            </p>
+
+            <h1>
+                Employee Management
+            </h1>
+
+            <p>
+                Manage employee information
+                using AWS and Terraform.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>
+                Add Employee
+            </h2>
+
+            <form id="employeeForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Employee Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Email"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="department"
+                    placeholder="Department"
+                    required
+                >
+
+                <button type="submit">
+                    Add Employee
+                </button>
+
+            </form>
+
+            <p id="message"></p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="title-row">
+
+                <h2>
+                    Employees
+                </h2>
+
+                <button
+                    onclick="loadEmployees()"
+                    class="refresh"
+                >
+                    Refresh
+                </button>
+
+            </div>
+
+
+            <div id="employeeList">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
