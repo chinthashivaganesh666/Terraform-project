@@ -41,9 +41,17 @@ Terraform is used to create and manage the complete AWS infrastructure.
 
 ### Terraform Commands
 
-```bash
+bash
 terraform init
 terraform fmt
 terraform validate
 terraform plan
 terraform apply
+
+### Application Features
+Add Employee
+View Employees
+Delete Employee
+
+Result:
+The Employee Management System was successfully deployed using AWS and Terraform with 2 Auto Scaling Groups and 2 Application Load Balancers.
